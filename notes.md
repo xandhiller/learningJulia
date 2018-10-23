@@ -56,3 +56,65 @@ Note that the `in` can be replaced with `=` or `$\in$`
 You must first indicate to Julia that you are using a module.
 `julia> using Pkg`
 `julia> Pkg.add("thing")`
+
+## Nested for-loops and *array comprehension*
+This is best demonstrated by an example, see `ex5.jl`
+
+## `real()` and `imag()`
+```
+julia> im
+im
+
+julia> 3*im
+0 + 3im
+
+julia> im^2
+-1 + 0im
+
+julia> real(im)
+false
+
+julia> real(im^2)
+-1
+
+julia> imag(2+1im)
+1
+```
+
+## Ternary Operators
+`a ? b : c`
+
+`a` = a condition
+
+`b` = what is done if `a` is *true*.
+
+`c` = what is done if `a` is *false*.
+
+Best seen in an example, see `ex6.jl`
+
+## Logical *and*
+Is symbolised by `&&`
+
+## Short circuit evaluation
+You can evaluate something in such a way that only a part is executed if one condition is false, e.g. if
+
+## Assigning functions
+
+### Formal
+```
+function sayhi(name)
+  println("Hi, $name. It's great to see you!")
+end
+```
+
+### Single line
+```
+sayhi(name) = println("Hi $name, it's great to see you.")
+```
+
+### Anonymous or *lambda* (mapping) functions
+```
+sayhi = name -> println("Hi $name, it's great to see you.")
+```
+
+## Duck-Typing
