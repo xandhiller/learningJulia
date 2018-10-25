@@ -118,3 +118,76 @@ sayhi = name -> println("Hi $name, it's great to see you.")
 ```
 
 ## Duck-Typing
+Julia works with a *'ducktyping'* methodology.
+
+*"If it quacks like a duck and looks like a duck, it's a duck."*
+
+## Mutable and non-mutable functions
+Mutable functions (functions that edit their inputs) are by convention denoted with a bang (exclamation mark) `!`
+
+E.g.
+```
+v = [1,2,3,5,4]
+sort(v)
+sort!(v)
+```
+
+Here, the `sort(v)` will return a sorted copy of `v`
+
+## Broadcasting
+
+
+## Plots
+
+## Multiple Dispatch
+Multiple dispatch is a feature of Julia that uses the types of multiple inputs to a function to determine which method should be called.
+
+E.g. a summing operator will be a different operation on primitives depending on whether it is adding two floats or two integers.
+
+## Transpose Versus the Conjugate Transpose
+The standard transpose operator `'` will take the conjugate transpose.
+```
+A = [1, 2+3im, 4im]
+
+A' = [1; 2-3im; -4im]
+
+conj(A') = []
+```
+# `conj()` is the conjugate operator
+
+```
+julia> z = 3 + 4im
+3 + 4im
+
+julia> conj(z)
+3 - 4im
+```
+
+## Types
+**Polymorphism**: The ability to write code that works on multiple data types.
+
+Julia is dynamic, but can also be sped up by indicating that certain variables are of a certain type.
+
+Allows method dispatch via the types of function arguments, this is deeply integrated with the language.
+
+
+
+
+
+<!--
+## Materials To Acquire
+* Local Julia Documentation
+* Local Plotly for Julia documentation
+* Local gr documentation
+
+## To Investigate
+* Why it takes so long to generate a graph with the script.
+* Running from the REPL(read-eval-print loop) works quite quickly? Because of loading of packages?
+* More unicode character operations.
+*  
+
+## To Install
+* Julia DiffEq
+* Julia Robotics Toolbox
+  * Specifically, meshcat.
+  -->
