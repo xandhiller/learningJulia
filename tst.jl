@@ -1,4 +1,4 @@
 using Tmp
 
-display(g())
-println()
+# look, a comment!
+
