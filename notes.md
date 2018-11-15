@@ -171,6 +171,8 @@ Julia is dynamic, but can also be sped up by indicating that certain variables a
 Allows method dispatch via the types of function arguments, this is deeply integrated with the language.
 
 
+## `quote`
+Makes a group of expression to evaluate. Usefulness is not yet clear when compared with the `:( println("Some expression!"))` way of passing expressions. 
 
 
 
