@@ -6,9 +6,9 @@
 
 * Make a macro for a self-made module. 
 
-* Types and their heirarchy.
+* ~~Types and their heirarchy.~~
 
-* Creating structures.
+* ~~Creating structures.~~
 
 * The effects of multiple dispatch/finding an implementation suitable for multiple dispatch to evaluate it's usefulness.
 
@@ -22,4 +22,7 @@
 
 * ~~Become familiar with good Hygiene practices for macros (i.e. not expanding macros out and making conflicting macro names).~~ These practices seem a bit esoteric for my use (currently). 
 
-* Learn to use `DataFrames.jl`
+* ~~Learn to use `DataFrames.jl`~~ Also became familiar with `Missings.jl`
+
+* ~~Learn the data types in julia.~~ You can also make custom types, giving it known characteristics by giving it a "supertype".
+
